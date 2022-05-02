@@ -1,0 +1,77 @@
+.odin{
+    background-color: rgb(245, 202, 13);
+    text-align: center;
+    width:25%;
+}
+
+.lasagna{
+    background-color: pink;
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    width: 26%;
+    font-size: 40px;
+}
+
+.lasagna.text{
+    width: 10%;
+    font-size: 25px;
+}
+
+.lasagna.ingredients{
+    width: 10%;
+    font-size: 18px;
+}
+
+.lasagna.prepare{
+    width: 25%;
+    font-size: 18px;
+}
+
+.pizza{
+    background-color: orange;
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    width: 26%;
+}
+
+.pizza.text{
+    font-size: 20px;
+    width: 10%
+}
+
+.pizza.ingredients{
+    font-size: 18px;
+    width: 10%
+}
+
+.pizza.prepare{
+    font-size: 18px;
+    width: 25%
+}
+
+.pesto{
+    background-color: rgb(117, 211, 117);
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 40px;
+    width: 20%;
+}
+
+.pesto.text{
+    font-size: 20px;
+    width: 10%;
+}
+
+.pesto.ingredients{
+    font-size: 18px;
+    width: 10%;
+}
+
+.pesto.prepare{
+    font-size: 18px;
+    width: 25%;
+}

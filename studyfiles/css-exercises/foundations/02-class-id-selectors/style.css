@@ -1,0 +1,19 @@
+.one {
+    font-family: Verdana, "DejaVu Sans", sans-serif;
+    background-color: lightcoral;
+}
+
+.one.two {
+    font-size: 24px;
+}
+
+#id-one {
+    color: blue;
+    font-size: 36px;
+}
+
+#id-two {
+    background-color: lightgreen;
+    font-size: 24px;
+    font-weight: bold;
+}
