@@ -1,0 +1,18 @@
+div{
+    border: 3px solid rgb(170, 43, 149);
+    width: 15%;
+    padding: 1em;
+    height: auto;
+    box-shadow:0.15em 0.2em 0.5em 0.1em rgb(170, 43, 149);
+}
+
+button{
+    margin-top: 50px;
+    font-size: 20px;
+    padding: 100px;
+    box-shadow: 0.15em 0.2em 0.5em 0.1em rgb(170, 43, 149);
+}  
+button:hover{
+    box-shadow: 0.1em 0.4em 1em 0.2em rgb(170, 43, 149),
+    inset 0em 0em 2em 0.1em rgb(170, 43, 149);
+}
