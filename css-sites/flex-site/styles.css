@@ -1,0 +1,231 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex: auto;
+}
+
+img{
+    height: 350px;
+    width: 600px;
+    border-radius: 15px;
+    border: 5px solid #3882f6;
+    margin-left: 40px;
+}
+
+button{
+    background-color: #3882f6;
+    border-radius: 5px;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    height: 30px;
+    width: 120px;
+    font-weight: 800;
+}
+
+/*-----------------------HEADER-----------------------*/
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: auto;
+    background-color: #1f2937;
+    gap: 50px;
+    padding-bottom: 100px;
+}
+
+.header-links{
+    display: flex;
+    flex: auto;
+    justify-content: center;
+    align-items: center;
+    gap: 320px;
+}
+
+.header-list li{
+    display:inline-block;
+    margin: 10px;
+}
+
+/*-----------------------HEADER SIGNUP-----------------------*/
+
+.header-signup p, .header-links ul, li, a{
+    list-style: none;
+    text-decoration:none;
+    color: #e5e7eb;
+    font-size: 18px;
+}
+
+.header-links h2{
+    font-size: 24px;
+    color: #f9faf8;
+}
+
+.header-left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.header-signup{
+    display: flex;
+    justify-content: center;
+}
+
+.header-text{
+    width: 400px;
+}
+
+.header-signup h2{
+    color: #f9faf8;
+    font-size: 48px;
+    width: 300px;
+    margin: 0;
+}
+
+/*-----------------------INFORMATION SECTION-----------------------*/
+
+.info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.info h2{
+    margin-top: 50px;
+    font-size: 36px;
+    font-weight: 1000;
+    color: #1f2937;
+}
+
+.image-subtext{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-subtext img{
+    height: 300px;
+    width: 300px;
+    margin: 0;
+}
+
+.info-subtext{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+.info-subtext p{
+    font-size: 18px;
+    font-weight: 800;
+    width: 210px;
+    margin-top: 20;
+    text-align: center;
+}
+
+/*-----------------------END OF INFORMATION SECTION-----------------------*/
+
+/*-----------------------QUOTE SECTION-----------------------*/
+.quote-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #e5e7eb;
+    
+    padding: 50px;
+    margin-bottom: 0;
+}
+
+.quotes{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.quote-one{
+   font-size: 36px; 
+   font-style: italic;
+   color: #1f2937;
+   width: 800px;
+   margin: 0;
+   line-height: 60px;
+}
+
+p.quote-two{
+    margin: 0;
+}
+
+.quote-two{
+    display: flex;
+    justify-content: flex-end;
+    font-weight: bold;
+    font-size: 18px;
+}
+/*-----------------------END OF QUOTE SECTION-----------------------*/
+
+/*-----------------------ALL TO ACTION SECTION-----------------------*/
+
+.action{
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex: auto;
+    margin: 80px;
+}
+
+.action-all{
+    color: white;
+    background-color: #3882f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 100px;
+    gap: 300px;
+    border-radius: 10px;
+}
+
+.action-one{
+    font-size: 20px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.action-two{
+    margin-top: 0;
+}
+
+.action-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 5px;
+}
+/*-----------------------END OF CALL TO ACTION SECTION-----------------------*/
+
+/*-----------------------COPYRIGHT SECTION-----------------------*/
+
+.copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: #1f2937;
+    color: white;
+    font-weight: bold;
+
+}
+
+/*-----------------------END OF COPYRIGHT SECTION-----------------------*/
