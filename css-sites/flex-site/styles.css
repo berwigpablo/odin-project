@@ -26,7 +26,7 @@ button{
     font-weight: 800;
 }
 
-/*-----------------------HEADER-----------------------*/
+/*-----------------------HEADER SECTION-----------------------*/
 
 .header{
     display: flex;
@@ -87,6 +87,8 @@ button{
     width: 300px;
     margin: 0;
 }
+
+/*-----------------------END OF HEADER SECTION-----------------------*/
 
 /*-----------------------INFORMATION SECTION-----------------------*/
 
@@ -175,7 +177,7 @@ p.quote-two{
 }
 /*-----------------------END OF QUOTE SECTION-----------------------*/
 
-/*-----------------------ALL TO ACTION SECTION-----------------------*/
+/*-----------------------CALL TO ACTION SECTION-----------------------*/
 
 .action{
     display: flex;
