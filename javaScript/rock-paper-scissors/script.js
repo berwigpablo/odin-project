@@ -25,7 +25,7 @@ function playRound(){
 console.log(`Computer selection: ${computerSelection}`);
 console.log(`Player selection: ${playerSelection}`);
 
-console.log(playRound(playerSelection, computerSelection));
+console.log(playRound());
 
 
 
