@@ -44,7 +44,6 @@ function computerPlay(){
       }
       console.log(`i value is: ${i}`);
     }
-   return playerScore, computerScore;
   }
 
 playRound();
@@ -56,8 +55,6 @@ if (playerScore === computerScore){
 } else {
     console.log('The computer wins!');
 }
-
-console.log(`Player score is ${playerScore}\nComputer score is ${computerScore}`);
 
 
 
