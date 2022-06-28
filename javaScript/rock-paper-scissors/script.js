@@ -4,6 +4,7 @@ let scoreCount = document.getElementById('score-count');
 let gameResult = document.getElementById('game-result');
 let playAgain = document.getElementById('play-again');
 
+let rock = document.getElementById('rock');
 let round = document.createElement('p');
 let scorePlayer = document.createElement('p');
 let scoreComputer = document.createElement('p');
@@ -24,7 +25,16 @@ gameResult.appendChild(result);
 
 input.forEach(input => input.addEventListener('click', userPlay));
 
-function replay(){
+//button style onclick
+input.forEach(input => input.addEventListener('mousedown', buttonClick));
+input.forEach(input => input.addEventListener('mouseup', buttonClick));
+
+
+function buttonClick(){
+    this.classList.toggle('clicked');
+}
+
+function replay(){ //resetting elements to play again
     playerScore = 0;
     computerScore = 0;
     let reset = document.querySelectorAll('p');
@@ -34,18 +44,18 @@ function replay(){
     playAgain.removeChild(again);
 }
 
-function userPlay(){
+function userPlay(){ //user selection
     playerSelection = this.id;
     computerSelection = computerPlay();
     playRound(playerSelection, computerSelection);
 }
 
-function computerPlay(){
+function computerPlay(){ //computer selection
     const randomNumber = Math.floor(Math.random() * selectionArray.length);
     return selectionArray[randomNumber];
 }
 
-  function playRound(){
+  function playRound(){ //game
 
          if (computerSelection === playerSelection){
             console.log('It\'s a tie!');
@@ -75,7 +85,7 @@ function computerPlay(){
             scorePlayer.textContent = `Player score is ${playerScore}`;
             scoreComputer.textContent = `Computer score is ${computerScore}`;
               
-    if(playerScore === 5 || computerScore === 5){
+    if(playerScore === 5 || computerScore === 5){ //winner check
         if (playerScore === computerScore){
             console.log('It\'s a tie!');
             result.textContent = 'It\s a tie!';
@@ -87,6 +97,8 @@ function computerPlay(){
             result.textContent = 'The computer wins! ):';
         }
       input.forEach(input => input.removeEventListener('click', userPlay));
+      input.forEach(input => input.removeEventListener('mousedown', buttonClick));
+      input.forEach(input => input.removeEventListener('mouseup', buttonClick));
 
       playAgain.appendChild(again);
       playAgain.addEventListener('click', replay);
