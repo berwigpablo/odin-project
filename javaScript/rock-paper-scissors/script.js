@@ -11,8 +11,6 @@ let scoreComputer = document.createElement('p');
 let result = document.createElement('p');
 let again = document.createElement('button');
 
-again.textContent = 'Play again?';
-
 const selectionArray = ['rock','paper','scissors'];
 let computerSelection = computerPlay();
 let playerScore = 0;
@@ -28,9 +26,11 @@ input.forEach(input => input.addEventListener('click', userPlay));
 //button style onclick
 input.forEach(input => input.addEventListener('mousedown', buttonClick));
 input.forEach(input => input.addEventListener('mouseup', buttonClick));
+again.addEventListener('mousedown', buttonClick);
+again.addEventListener('mouseup', buttonClick);
 
 
-function buttonClick(){
+function buttonClick(){ //styling buttons
     this.classList.toggle('clicked');
 }
 
@@ -41,6 +41,9 @@ function replay(){ //resetting elements to play again
     reset.forEach(element => element.textContent = '');
 
     input.forEach(input => input.addEventListener('click', userPlay));
+    input.forEach(input => input.addEventListener('mousedown', buttonClick));
+    input.forEach(input => input.addEventListener('mouseup', buttonClick));
+
     playAgain.removeChild(again);
 }
 
@@ -58,50 +61,50 @@ function computerPlay(){ //computer selection
   function playRound(){ //game
 
          if (computerSelection === playerSelection){
-            console.log('It\'s a tie!');
             round.textContent = 'It\'s a tie!';
+            round.style.color = 'brown';
 
         } else if (computerSelection === 'rock' && playerSelection === 'scissors'){
-            console.log('The computer wins this round.');
             computerScore++;
             round.textContent = 'The computer wins this round!';
+            round.style.color = 'red';
 
         } else if (computerSelection === 'paper' && playerSelection === 'rock'){
-            console.log('The computer wins this round.');
             computerScore++;
             round.textContent = 'The computer wins this round!';
+            round.style.color = 'red';
 
         } else if (computerSelection === 'scissors' && playerSelection === 'paper'){
-            console.log('The computer wins this round.');
             computerScore++;
-            round.textContent = 'The computer wins this round.';
+            round.textContent = 'The computer wins this round!';
+            round.style.color = 'red';
 
         } else {
-            console.log('You win this round!');
             playerScore++;
             round.textContent = 'You win this round!';
+            round.style.color = 'green';
         }
-            console.log(`Player score is ${playerScore}\nComputer score is ${computerScore}`);
             scorePlayer.textContent = `Player score is ${playerScore}`;
             scoreComputer.textContent = `Computer score is ${computerScore}`;
               
-    if(playerScore === 5 || computerScore === 5){ //winner check
+    if(playerScore === 5 || computerScore === 5){ //checking for a winner
         if (playerScore === computerScore){
-            console.log('It\'s a tie!');
             result.textContent = 'It\s a tie!';
+            result.style.color = 'brown';
         } else if (playerScore > computerScore){
-            console.log('You win!!!');
             result.textContent = 'You win!!!';
+            result.style.color = 'green';
         } else {
-            console.log('The computer wins!');
             result.textContent = 'The computer wins! ):';
+            result.style.color = 'red';
         }
       input.forEach(input => input.removeEventListener('click', userPlay));
       input.forEach(input => input.removeEventListener('mousedown', buttonClick));
       input.forEach(input => input.removeEventListener('mouseup', buttonClick));
 
+      again.textContent = 'Play again!';
       playAgain.appendChild(again);
-      playAgain.addEventListener('click', replay);
+      again.addEventListener('click', replay);
     }    
 }
 

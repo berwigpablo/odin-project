@@ -1,11 +1,18 @@
-body{
+body, html{
     background-color: rgb(190, 190, 190);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    flex: auto;
+    flex: 1 1 0;
     margin: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div{
+    min-height: 85px;
 }
 
 #buttons input{
@@ -15,7 +22,56 @@ body{
     box-shadow: 0.5em 0.5em black;
 }
 
-input.clicked {
-    transform: scale(0.98);
-    box-shadow: 0.3em 0.3em black !important;
+.clicked {
+    transform: scale(0.95);
+}
+
+#round-count{
+    font-size: 20px;
+    font-weight: bold;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-result{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#game-result p{
+
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+#score-count, #score-count p{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(116, 63, 2);
+    margin: 0;
+}
+
+#play-again{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    font-size: 20px;
+    font-weight: 530;
+    border: 4px solid black;
+    border-radius: 5px;
+}
+
+button:hover{
+    background-color: gold;
+    cursor: default;
+    border: 5px solid black; 
 }
