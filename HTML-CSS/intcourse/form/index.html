@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <form action="http://httpbin.org/post" method="post">
+        <div>
+            <label for="first-name">First name: </label>
+            <input type="text" id="first-name" name="first_name" placeholder="first name">
+
+            <label for="last-name">Last name: </label>
+            <input type="text" id="last-name" name="last_name" placeholder="last name">
+
+            <label for="age">Age: </label>
+            <input type="text" id="age" name="age" placeholder="age">
+
+            <label for="email">E-mail: </label>
+            <input type="email" name="email" id="email"  placeholder="email@email.com">
+
+            <label for="password">E-mail: </label>
+            <input type="password" name="password" id="password"  placeholder="password">
+
+            <label for="number">Number: </label>
+            <input type="number" name="number" id="number"  placeholder="amount">
+
+            <label for="date">Date: </label>
+            <input type="date" name="date" id="date">
+
+            <label for="texta">Text area:</label>
+            <textarea name="texta" id="texta" cols="30" rows="10" placeholder="text here"></textarea>
+        </div>
+        <div>
+            <label for="car">Select a car: </label>
+            <select name="car" id="car">
+            <optgroup label="Good">
+                <option value="mercedes">Mercedes</option>
+                <option value="volvo">Volvo</option>
+                <option value="ford" selected>Ford</option>
+            </optgroup>
+            <optgroup label="Shitty">
+                <option value="tesla">Tesla</option>
+                <option value="bmw">BMW</option>
+                <option value="mini">Mini</option>
+            </optgroup>
+            </select>
+            <div id="radio">
+                <h3>Select a type:</h3>
+                <div id="radio-elements">
+                    <input type="radio" name="radio" id="child" value="Child">
+                    <label for="radio">Child</label>
+                    <input type="radio" name="radio" id="adult" value="Adult">
+                    <label for="radio">Adult</label>
+                    <input type="radio" name="radio" id="Senior" value="Senior">
+                    <label for="radio">Senior</label>
+                </div>
+            </div>
+            <div id="toppings">
+                <h3>Select a type:</h3>
+                <div id="toppings-elements">
+                    <div>
+                        <input type="checkbox" name="checkbox" id="sausage" value="Sausage">
+                        <label for="checkbox">Sausage</label>
+                        <input type="checkbox" name="checkbox" id="onions" value="Onions">
+                        <label for="checkbox">Onions</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" name="checkbox" id="pepperoni" value="Pepperoni">
+                        <label for="checkbox">Pepperoni</label>
+                        <input type="checkbox" name="checkbox" id="mushrooms" value="Mushrooms">
+                        <label for="checkbox">Mushrooms</label>
+                    </div>
+                </div>
+            </div>
+            <fieldset id="news">
+                <legend><strong>Fieldset for newsletter</strong></legend>
+                <h3>Newsletter</h3>
+                <div id="news-elements">
+                    <label for="newsletter"> Sign up for the newsletter: </label>
+                    <input type="checkbox" name="newsletter" id="newsletter" checked>
+                </div>
+            </fieldset>
+                <fieldset id="button">
+                    <legend><strong>Fieldset for buttons</strong></legend>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                    <button type="button">No type (default)</button>
+                </fieldset>
+        </div>
+    </form>
+
+</body>
+</html>

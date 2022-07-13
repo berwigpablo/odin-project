@@ -1,0 +1,36 @@
+table{
+  table-layout: fixed;  /* fixa o tamanho das colunas de acordo com os headers */
+  border-collapse: collapse;  /* collapsa as bordas e melhora o funcionamento da tabela */
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+}
+
+caption{
+  text-align: center !important;
+}
+
+table *{
+  padding: 0.3em;
+  vertical-align: top;
+  text-align: initial;
+}
+
+thead th:nth-child(n+2):nth-child(-n+3){ /* do segundo até o terceiro elemento */
+  text-align: right;
+}
+
+tbody tr td:nth-child(-n+3){ /* os primeiros três elementos| */
+  text-align: right;
+}
+
+tbody tr:nth-child(odd){  /* elementos ímpares */
+  background-color: #eee;
+}
+
+tfoot{
+  border-top: 1px solid #999;
+}
+
+tfoot th{
+  text-align: right;
+}
