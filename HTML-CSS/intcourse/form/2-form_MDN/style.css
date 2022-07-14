@@ -1,0 +1,38 @@
+body, html{
+    margin: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    width: 40%;
+}
+
+fieldset{
+    border: 2px solid black;
+    border-radius: 8px;
+}
+
+#form-fields{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0 0 10px;
+    gap: 30px;
+}
+
+label{
+    margin-right: 15px;
+}
+
+#textarea{
+    display: flex;
+    justify-content: start;
+}
+
+button{
+    align-self: center;
+    padding: 10px;
+    width: 50%;
+    margin-bottom: 10px;
+}
