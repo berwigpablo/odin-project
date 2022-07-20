@@ -15,7 +15,11 @@
             <input type="text" id="first-name" name="first_name" placeholder="first name">
 
             <label for="last-name">Last name: </label>
-            <input type="text" id="last-name" name="last_name" placeholder="last name">
+            <input type="text" id="last-name" name="last_name" placeholder="last name" list="lastName">
+            <datalist id="lastName">  <!-- input referencia datalist com id -->
+                <option>Hammel</option>
+                <option>Berwig</option>  <!-- datalist dá opções para um input de texto -->
+            </datalist>
 
             <label for="age">Age: </label>
             <input type="text" id="age" name="age" placeholder="age">
